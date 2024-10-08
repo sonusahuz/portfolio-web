@@ -1,34 +1,30 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Code, Server } from 'lucide-react';
 
 export default function SkillsPage() {
   const skillCategories = [
     {
-      title: 'Frontend Development',
-      icon: <Code className="w-6 h-6" />,
+      title: 'Programming Languages',
+      skills: ['JavaScript', 'TypeScript', 'Python'],
+    },
+    {
+      title: 'Frameworks/Libraries',
+      skills: ['React.js', 'Next.js', 'Redux', 'Zustand'],
+    },
+    {
+      title: 'Styling Tools',
       skills: [
-        'React',
-        'Next.js',
-        'TypeScript',
-        'Tailwind CSS',
-        'HTML5',
-        'CSS3',
-        'JavaScript',
-        'Redux',
+        'CSS',
+        'TailwindCSS',
+        'Bootstrap',
+        'Material UI',
+        'Shadcn UI',
+        'Next UI',
       ],
     },
     {
-      title: 'Backend Development',
-      icon: <Server className="w-6 h-6" />,
-      skills: [
-        'Node.js',
-        'Express',
-        'Python',
-        'Django',
-        'PostgreSQL',
-        'MongoDB',
-      ],
+      title: 'Databases/Version Control',
+      skills: ['MongoDB', 'PostgreSQL', 'Git', 'Github', 'Linux'],
     },
   ];
 
@@ -40,12 +36,11 @@ export default function SkillsPage() {
         technologies and frameworks. Here&apos;s an overview of my technical
         expertise.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-8">
-        {skillCategories.map((category, index) => (
-          <Card key={index} className="mb-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {skillCategories.map((category) => (
+          <Card key={category.title} className="flex flex-col">
             <CardHeader>
-              <CardTitle className="flex items-center gap-2 text-[22px]">
-                {category.icon}
+              <CardTitle className="text-xl lg:ml-2">
                 {category.title}
               </CardTitle>
             </CardHeader>
