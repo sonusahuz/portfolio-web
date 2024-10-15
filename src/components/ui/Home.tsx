@@ -100,6 +100,7 @@ export default function HomePage() {
             <Button
               size="lg"
               aria-label="View Projects"
+              className="w-36"
               onClick={() => handleNavigation('projects')}
             >
               Projects
@@ -112,6 +113,7 @@ export default function HomePage() {
               <Button
                 size="lg"
                 variant="outline"
+                className="w-36"
                 aria-label="Connect on LinkedIn"
               >
                 Connect 👋
