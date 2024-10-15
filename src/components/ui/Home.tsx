@@ -56,7 +56,7 @@ export default function HomePage() {
             <span className="sr-only">Toggle theme</span>
           </Button>
           <Menu
-            className="h-7 w-7 cursor-pointer"
+            className="h-8 w-8 cursor-pointer"
             onClick={() => setOpen(true)}
             aria-label="Open menu"
           />
