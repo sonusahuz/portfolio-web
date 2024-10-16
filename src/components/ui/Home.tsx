@@ -56,7 +56,7 @@ export default function HomePage() {
             <span className="sr-only">Toggle theme</span>
           </Button>
           <Menu
-            className="h-8 w-8 cursor-pointer"
+            className="h-7 w-7 cursor-pointer"
             onClick={() => setOpen(true)}
             aria-label="Open menu"
           />
@@ -69,7 +69,7 @@ export default function HomePage() {
                   <a
                     onClick={() => handleNavigation(href.toLowerCase())}
                     aria-label={`Go to ${title}`}
-                    className="block text-xl px-4 py-2 text-muted-foreground hover:text-foreground transition-colors"
+                    className="block font-light text-xl px-4 py-2 text-muted-foreground hover:text-foreground transition-colors"
                   >
                     {title}
                   </a>
@@ -88,7 +88,7 @@ export default function HomePage() {
           <h1 className="text-5xl sm:text-5xl md:text-6xl font-medium">
             Sonu Sahu.
           </h1>
-          <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-6xl font-medium text-muted-foreground">
+          <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-6xl lg:font-medium font-light text-muted-foreground">
             Building Engaging Web Applications that Retain Users.
           </h2>
           <p className="text-lg max-w-[900px] mx-auto sm:text-xl font-light text-muted-foreground leading-relaxed lg:mt-2">
